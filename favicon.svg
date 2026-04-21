@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#1a0d18"/>
+  <rect width="64" height="64" rx="14" fill="#fdf2ec"/>
   <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
         font-family="Georgia, 'Times New Roman', serif"
         font-style="italic"
         font-weight="400"
         font-size="42"
-        fill="#f3d9d3">B</text>
+        fill="#2a1620">B</text>
 </svg>
