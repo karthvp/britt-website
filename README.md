@@ -22,7 +22,7 @@ All copy lives in `index.html`. The most common edits:
 | Hero tagline | `<p class="hero-tagline">` block |
 | About paragraph / bio | `.about-heading` and `.about-body` blocks |
 | Work rows | inside `<ol class="work-list">` — each `<li class="work-row">` is one entry |
-| Industries | inside `<ul class="clients-list">` |
+| Focus areas | inside `<ul class="clients-list">` |
 | Social links | inside `<ul class="socials">` |
 | Email address | search `brittneysauerweinhr@gmail.com` (appears in 3 places: mailto + display + `data-copy`) |
 | Photos | replace files in `assets/` (keep the same filenames) |
