@@ -6,7 +6,7 @@ Personal landing page for Brittney Sauerwein. Plain HTML/CSS/JS — no build ste
 
 - `index.html` — page structure + content
 - `styles.css` — all styling (design tokens, layout, animations)
-- `script.js` — reveal-on-scroll, nav compaction, hero parallax, email copy
+- `script.js` — reveal-on-scroll, nav compaction, hero parallax
 - `favicon.svg` — monogram favicon
 - `assets/` — portrait images (hero, about, og)
 - `tools/og-card.html` — source template for the 1200×630 social preview card
@@ -24,7 +24,6 @@ All copy lives in `index.html`. The most common edits:
 | Work rows | inside `<ol class="work-list">` — each `<li class="work-row">` is one entry |
 | Focus areas | inside `<ul class="clients-list">` |
 | Social links | inside `<ul class="socials">` |
-| Email address | search `[removed]` (appears in 3 places: mailto + display + `data-copy`) |
 | Photos | replace files in `assets/` (keep the same filenames) |
 
 ## Local preview
@@ -124,5 +123,5 @@ sips -Z 1800 -s format jpeg -s formatOptions 85 \
 ## What's intentionally NOT here
 
 - No analytics yet. If you want some, add Cloudflare Web Analytics (one snippet in `index.html`) — privacy-friendly and free.
-- No contact form — email link is enough for a landing page.
+- No contact form — social links are enough for a landing page.
 - No CMS — for a site that changes once or twice a year, the HTML *is* the CMS.

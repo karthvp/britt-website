@@ -799,53 +799,6 @@ section { position: relative; }
   margin-bottom: clamp(36px, 5vw, 56px);
   text-wrap: pretty;
 }
-.contact-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: clamp(26px, 4vw, 48px);
-  color: var(--cream);
-  padding-bottom: 6px;
-  border-bottom: var(--hairline) solid var(--cream-faint);
-  margin-bottom: clamp(60px, 8vw, 100px);
-  transition: border-color 280ms var(--ease), gap 280ms var(--ease);
-  position: relative;
-}
-.contact-email:hover {
-  border-color: var(--cream);
-  gap: 20px;
-}
-.contact-email.is-copied .contact-email-text { opacity: 0; }
-.contact-email.is-copied .contact-email-icon { opacity: 0; }
-.contact-email-text,
-.contact-email-icon {
-  transition: opacity 180ms var(--ease);
-}
-.contact-email-toast {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 6px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: inherit;
-  color: var(--cream);
-  opacity: 0;
-  transform: translateY(6px);
-  pointer-events: none;
-  transition: opacity 220ms var(--ease-ios), transform 280ms var(--ease-ios);
-  white-space: nowrap;
-}
-.contact-email.is-copied .contact-email-toast {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .socials {
   display: flex;
   flex-wrap: wrap;
@@ -954,6 +907,5 @@ section { position: relative; }
   .about-heading em { display: inline; }
   .meta-list > div { grid-template-columns: 100px 1fr; }
 
-  .contact-email { font-size: 32px; }
   .socials a { width: 44px; height: 44px; }
 }
