@@ -246,30 +246,6 @@
     }
   })();
 
-  // ---------- 7. Email copy-to-clipboard with toast swap ----------
-  (function () {
-    var email = document.querySelector('.contact-email');
-    if (!email) return;
-    var addr = email.getAttribute('data-copy') || '[removed]';
-    var timer = null;
-
-    email.addEventListener('click', function (e) {
-      // Let modifier-clicks follow the link as normal mailto:
-      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
-      if (!navigator.clipboard || !navigator.clipboard.writeText) return;
-      e.preventDefault();
-      navigator.clipboard.writeText(addr).then(function () {
-        email.classList.add('is-copied');
-        if (timer) clearTimeout(timer);
-        timer = setTimeout(function () {
-          email.classList.remove('is-copied');
-        }, 1400);
-      }).catch(function () {
-        window.location.href = 'mailto:' + addr;
-      });
-    });
-  })();
-
-  // ---------- 8. Smooth-scroll for asterisk anchor and footer back-to-top ----------
+  // ---------- 7. Smooth-scroll for asterisk anchor and footer back-to-top ----------
   // (honors prefers-reduced-motion via native smooth behavior; already set in CSS)
 })();
