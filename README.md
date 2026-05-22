@@ -2,16 +2,41 @@
 
 Personal landing page for Brittney Sauerwein. Plain HTML/CSS/JS — no build step, no dependencies.
 
+## Status — site temporarily offline
+
+The live site is currently parked. The real landing page is preserved, untouched,
+in the `site/` folder. What's deployed at the root is a minimal "Coming soon"
+placeholder, and crawling is blocked.
+
+**To bring the site back:**
+
+```bash
+rm index.html robots.txt _redirects   # remove the placeholder + offline files
+git mv site/* .                        # move the real site back to the root
+rmdir site
+git add -A && git commit -m "Restore site"
+git push origin main                   # Cloudflare Pages redeploys automatically
+```
+
 ## Files
 
-- `index.html` — page structure + content
-- `styles.css` — all styling (design tokens, layout, animations)
-- `script.js` — reveal-on-scroll, nav compaction, hero parallax
-- `favicon.svg` — monogram favicon
-- `assets/` — portrait images (hero, about, og)
-- `tools/og-card.html` — source template for the 1200×630 social preview card
+While the site is offline:
+
+- `index.html` — minimal "Coming soon" placeholder (the deployed homepage)
+- `robots.txt` — blocks all crawling while offline
+- `_redirects` — bounces any `/site/*` request to the placeholder
 - `CNAME` — custom domain marker for GitHub Pages (harmless for Cloudflare Pages too)
-- `robots.txt` / `sitemap.xml` — SEO basics
+- `site/` — the full landing page, parked for future use:
+  - `site/index.html` — page structure + content
+  - `site/styles.css` — all styling (design tokens, layout, animations)
+  - `site/script.js` — reveal-on-scroll, nav compaction, hero parallax
+  - `site/favicon.svg` — monogram favicon
+  - `site/assets/` — portrait images (hero, about, og)
+  - `site/tools/og-card.html` — source template for the 1200×630 social preview card
+  - `site/robots.txt` / `site/sitemap.xml` — SEO basics (used once restored)
+
+Paths in the sections below are written relative to the live site root — once
+restored, they sit at the repo root; while offline, they live under `site/`.
 
 ## Editing content
 
