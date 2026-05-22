@@ -1,0 +1,3 @@
+# Site temporarily offline — bounce the archived /site/ files to the placeholder.
+/site      /  302
+/site/*    /  302
